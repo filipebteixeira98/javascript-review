@@ -15,4 +15,4 @@ var usuarios = [
 	}
 ];
 
-console.log(exibeHabilidades(usuarios));
+exibeHabilidades(usuarios);
