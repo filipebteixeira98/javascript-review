@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Challenge-02</title>
+	<title>Challenge-01</title>
 </head>
 <body>
 	<button id="btn"></button>
@@ -9,16 +9,7 @@
 	<div id="squares"></div>
 
 	<script>
-		function getRandomColor() {
-			var letters = '0123456789ABCDEF';
-			var color = '#';
-
-			for(var i = 0; i < 6; i++) {
-				color += letters[Math.floor(Math.random() * 16)];
-			}
-		}
-
-		var btn = document.getElementById('btn');
+		var btnElement = document.getElementById('btn');
 		var squaresElement = document.getElementById('squares');
 
 		btn.onclick = function() {
@@ -27,9 +18,6 @@
 			square.style.width = 100;
 			square.style.height = 100;
 			square.style.backgroundColor = '#F00';
-			square.onmouseover = function() {
-				square.style.backgroundColor = getRandomColor();
-			};
 
 			squaresElement.appendChild(square);
 		};

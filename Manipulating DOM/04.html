@@ -4,13 +4,15 @@
 	<title>Challenge-04</title>
 </head>
 <body>
+	<ul></ul>
+
 	<input type="text" name="item">
 	<button onclick="add()"></button>
 
 	<script>
 		var names = ['Diego', 'Gabriel', 'Lucas'];
 		var listElement = document.querySelector('ul');
-		var inputElement = document.querySelector('input[name=item]');
+		var inputElement = document.querySelector('input');
 
 		function addItem(value) {
 			var liElement = document.createElement('li');
