@@ -1,10 +1,10 @@
-function exibeHabilidades(usuarios) {
-	for(usuario of usuarios) {
-		console.log('O ' + usuario.nome + ' possui as habilidades: ' + usuario.habilidades.join(', '));
+function showSkills(users) {
+	for(user of users) {
+		console.log('O ' + user.nome + ' possui as habilidades: ' + user.habilidades.join(', '));
 	}
 }
 
-var usuarios = [
+var users = [
 	{
 		nome: 'Diego',
 		habilidades: ['Javascript', 'ReactJS', 'Redux']
@@ -15,4 +15,4 @@ var usuarios = [
 	}
 ];
 
-exibeHabilidades(usuarios);
+showSkills(users);

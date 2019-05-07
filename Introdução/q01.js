@@ -1,8 +1,8 @@
-function exibeMensagem(endereco) {
-	return 'O usuário mora em ' + endereco.cidade + ' / ' + endereco.uf + ', no bairro ' + endereco.bairro + ', na rua "' + endereco.rua + '" com nº ' + endereco.numero + '.';
+function showMsg(address) {
+	return 'O usuário mora em ' + address.cidade + ' / ' + address.uf + ', no bairro ' + address.bairro + ', na rua "' + address.rua + '" com nº ' + address.numero + '.';
 }
 
-var endereco = {
+var address = {
 	rua: 'Rua dos pinheiros',
 	numero: 1293,
 	bairro: 'Centro',
@@ -10,4 +10,4 @@ var endereco = {
 	uf: 'SP'
 };
 
-console.log(exibeMensagem(endereco));
+console.log(showMsg(address));

@@ -1,9 +1,10 @@
-function pares(x, y) {
-	for(var i = x; i <= y; i++) {
+function even(x, y) {
+	var aux = x;
+	while(aux <= y) {
 		if(i % 2 === 0) {
 			console.log(i);
 		}
 	}
 }
 
-pares(32, 321);
+even(32, 321);

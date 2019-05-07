@@ -1,18 +1,18 @@
-function experiencia(anos) {
-	switch(anos) {
-		case anos <= 1:
+function experience(time) {
+	switch(time) {
+		case time <= 1:
 			return 'Iniciante';
-		case anos <= 3:
+		case time <= 3:
 			return 'Intermediário';
-		case anos <= 6:
+		case time <= 6:
 			return 'Avançado';
-		case anos >= 7:
+		case time >= 7:
 			return 'Jedi Master';
 		default: 
 			return 'Quantidade inválida!';
 	}
 }
 
-var anosEstudo = 7;
+var time = 7;
 
-console.log(experiencia(anosEstudo));
+console.log(experience(time));
