@@ -1,5 +1,5 @@
 function experiencia(anos) {
-	switch(anos){
+	switch(anos) {
 		case anos <= 1:
 			return 'Iniciante';
 		case anos <= 3:
@@ -15,3 +15,4 @@ function experiencia(anos) {
 
 var anosEstudo = 7;
 
+console.log(experiencia(anosEstudo));
