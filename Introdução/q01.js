@@ -9,3 +9,5 @@ var endereco = {
 	cidade: 'São Paulo',
 	uf: 'SP'
 };
+
+console.log(exibeMensagem(endereco));
