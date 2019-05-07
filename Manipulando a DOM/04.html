@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Challenge-04</title>
+</head>
+<body>
+	<input type="text" name="item">
+	<button onclick="add()"></button>
+
+	<script>
+		var names = ['Diego', 'Gabriel', 'Lucas'];
+		var listElement = document.querySelector('ul');
+		var inputElement = document.querySelector('input[name=item]');
+
+		function addItem(value) {
+			var liElement = document.createElement('li');
+			var textElement = document.createTextNode(value);
+
+			liElement.appendChild(textElement);
+			listElement.appendChild(liElement);
+		}
+
+		function add() {
+			addItem(inputElement.value);
+			inputElement.value = '';
+		}
+
+		for(name of names) {
+			addItem(name);
+		}
+	</script>
+</body>
+</html>
