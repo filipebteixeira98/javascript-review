@@ -19,8 +19,5 @@ function listRepositories() {
 	axios.get('https://api.github.com/users/' + user + '/repos')
 		.then(function(response) {
 			renderRepositories(response.data);
-		})
-		.catch(function(error) {
-			console.warn(error);
 		});
 }
